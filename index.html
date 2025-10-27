@@ -13,15 +13,13 @@
     <h1 class="brand">Zero Pin</h1>
     <h2>স্টাইলিশ ও আরামদায়ক প্রিমিয়াম টি-শার্ট</h2>
     <p>আপনার স্টাইল ও আত্মবিশ্বাসের সাথে খাপ খায় এমন ডিজাইন। আজই অর্ডার করুন!</p>
-    
     <img src="photo/WhatsApp Image 2025-10-20 at 09.34.40_925162ff.jpg" alt="Zero Pin টি-শার্ট" class="product-img">
-
     <button class="cta-btn">এখনই কিনুন</button>
   </header>
 
   <!-- ================= Features ================= -->
   <section class="features">
-    <h2 class="section-title">কেন Zero pin কেন টি-শার্ট নিব ?</h2>
+    <h2 class="section-title">কেন Zero Pin থেকে টি-শার্ট নিবেন?</h2>
     <div class="features-grid">
       <div class="feature-box">
         <h3>100% কটন</h3>
@@ -48,60 +46,64 @@
     <div class="gallery-grid">
       <div class="gallery-item">
         <img src="photo/ju 2.jpg" alt="টি-শার্ট ১">
-        <h3>Classic Black Tee</h3>
+        <h3>Classic Black </h3>
+        <button class="order-now" data-product="Classic Black Tee">Order Now</button>
       </div>
       <div class="gallery-item">
         <img src="photo/img 2.jpg" alt="টি-শার্ট ২">
-        <h3>Pure White Tee</h3>
+        <h3>Pure White </h3>
+        <button class="order-now" data-product="Pure White Tee">Order Now</button>
       </div>
       <div class="gallery-item">
-        <img src="photo/IMG_0342.JPG" alt="টি-শার্ট ৩">
-        <h3>Graphic Street Tee</h3>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= Reviews ================= -->
-  <section class="reviews">
-    <h2 class="section-title">গ্রাহকের রিভিউ</h2>
-    <div class="reviews-grid">
-      <div class="review-box">
-        <h3>⭐⭐⭐⭐⭐</h3>
-        <p>"Zero Pin-এর টি-শার্ট পরলে সত্যি আলাদা লাগে!" – রাহুল</p>
-      </div>
-      <div class="review-box">
-        <h3>⭐⭐⭐⭐⭐</h3>
-        <p>"ফ্যাব্রিক দারুণ, আর ডেলিভারি দ্রুত।" – সুমিতা</p>
-      </div>
-      <div class="review-box">
-        <h3>⭐⭐⭐⭐⭐</h3>
-        <p>"দামের তুলনায় মান অসাধারণ, আবার অর্ডার করব!" – তানভীর</p>
+        <img src="photo/white-khilafah.jpg" alt="টি-শার্ট ৩">
+        <h3>White Khilafah</h3>
+        <button class="order-now" data-product="Graphic Street Tee">Order Now</button>
       </div>
     </div>
   </section>
 
   <!-- ================= Promo / Order Form ================= -->
-  <section class="promo">
+  <section class="promo" id="order">
     <h2>আজ অর্ডার করলে পাচ্ছেন ২০% ছাড়!</h2>
     <div class="countdown" id="countdown">00:00:00</div>
 
-     <form action="https://formspree.io/f/xzzakpvq" method="POST"=</"order-form">
+    <form id="order-form" action="https://formspree.io/f/xzzakpvq" method="POST">
       <input type="text" name="name" placeholder="আপনার নাম" required>
       <input type="email" name="email" placeholder="আপনার ইমেল" required>
       <input type="text" name="address" placeholder="ঠিকানা" required>
+
+      <select name="size" required>
+        <option value="">সাইজ নির্বাচন করুন</option>
+        <option value="Small">S</option>
+        <option value="Medium">M</option>
+        <option value="Large">L</option>
+        <option value="XL">XL</option>
+      </select>
+
+      <select name="color" required>
+        <option value="">রঙ নির্বাচন করুন</option>
+        <option value="Black">Black</option>
+        <option value="White">White</option>
+        <option value="Blue">Blue</option>
+        <option value="Gray">Gray</option>
+      </select>
+
       <button type="submit">অর্ডার করুন</button>
     </form>
+
+    <p id="form-message" class="success-message" style="display:none;">
+      ✅ ধন্যবাদ! আপনার অর্ডার গ্রহণ করা হয়েছে।
+    </p>
+
     <p class="privacy-note">আপনার তথ্য নিরাপদ থাকবে। কোনো স্প্যাম নেই।</p>
   </section>
 
   <!-- ================= Footer ================= -->
-  <!-- ================= Footer ================= -->
-<footer>
-  <p>&copy; 2025 <span class="brand-footer">Zero Pin</span> | Developed by 
-    <a href="https://github.com/imranalfarabi955" target="_blank" class="dev-link">Imran Al Farabi</a> 💻
-  </p>
-</footer>
-
+  <footer>
+    <p>&copy; 2025 <span class="brand-footer">Zero Pin</span> | Developed by 
+      <a href="https://github.com/imranalfarabi955" target="_blank" class="dev-link">Imran Al Farabi</a> 💻
+    </p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
