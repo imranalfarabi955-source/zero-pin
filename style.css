@@ -41,3 +41,40 @@ footer { background:#111; color:white; padding:15px 0; margin-top:50px; }
   .cta-btn{padding:10px 20px;}
   .countdown{font-size:1.5rem;}
 }
+/* === Animated Footer === */
+footer {
+  background: linear-gradient(270deg, #111, #222, #444);
+  background-size: 600% 600%;
+  animation: footerGradient 10s ease infinite;
+  color: white;
+  padding: 20px 0;
+  margin-top: 50px;
+  text-align: center;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  position: relative;
+  overflow: hidden;
+}
+
+@keyframes footerGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+footer .brand-footer {
+  color: #ffb400;
+  font-weight: bold;
+}
+
+footer .dev-link {
+  color: #ffb400;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+footer .dev-link:hover {
+  color: #ffd65c;
+  text-decoration: underline;
+}
