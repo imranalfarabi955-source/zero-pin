@@ -34,3 +34,33 @@ form.addEventListener("submit", async (e) => {
     alert("দুঃখিত, কিছু সমস্যা হয়েছে। আবার চেষ্টা করুন।");
   }
 });
+
+// ================= Order Button Logic =================
+document.querySelectorAll('.order-btn').forEach(button => {
+  button.addEventListener('click', () => {
+    const product = button.getAttribute('data-product');
+    const price = button.getAttribute('data-price');
+    const form = document.querySelector('form');
+
+    form.scrollIntoView({ behavior: 'smooth' });
+
+    // Auto-fill product info in form
+    if (!document.querySelector('input[name="product"]')) {
+      const productInput = document.createElement('input');
+      productInput.type = 'hidden';
+      productInput.name = 'product';
+      form.appendChild(productInput);
+    }
+
+    if (!document.querySelector('input[name="price"]')) {
+      const priceInput = document.createElement('input');
+      priceInput.type = 'hidden';
+      priceInput.name = 'price';
+      form.appendChild(priceInput);
+    }
+
+    form.querySelector('input[name="product"]').value = product;
+    form.querySelector('input[name="price"]').value = price;
+  });
+});
+
